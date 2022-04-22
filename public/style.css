@@ -1,85 +1,98 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 /* 8. Add style to divs with the "container" class */
- {
-  /* 9. Add 15px padding */
-  
-  /* 10. Make the background color of the container Carolina Blue using the hex code defined here: https://en.wikipedia.org/wiki/Carolina_blue*/
 
+container {
+    padding: 15px;
+    background: #4B9CD3;
+    /* 9. Add 15px padding */
+    /* 10. Make the background color of the container Carolina Blue using the hex code defined here: https://en.wikipedia.org/wiki/Carolina_blue*/
 }
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+input[type=text],
+input[type=password],
+input[type=username] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=username] {
+    background-color: #ddd;
+    outline: none;
 }
+
 
 /* 11. Style only the h1 with id "register" */
-h1 {
-  /* 12. Make the text BOLD */
-  
-  /* 13. Make the text color navy (look up the hex code for navy)
-  
+
+#register {
+    font-weight: bold;
+    color: navy;
+    /* 12. Make the text BOLD */
+    /* 13. Make the text color navy (look up the hex code for navy) */
 }
 
 hr {
-  /* 14. Override default hr style with a 30-pixel bottom margin */
-  
-  /* 15. Add a 2-pixel solid azure border (look up the hex code). */
-  
+    margin-bottom: 30px;
+    border: azure;
+    border-radius: 2px;
+    /* 14. Override default hr style with a 30-pixel bottom margin */
+    /* 15. Add a 2-pixel solid azure border (look up the hex code). */
 }
 
+
 /* 16. Set a style for the submit button with "registerbtn" class */
- {
-  /* 17. Set the background color to navy using the hex color */
-  
-  /* 18. Set the text color to white using the hex color */  
-  
-  padding: 16px 20px;
-  margin: 8px 0;
-  /* 19. Set it to have no border */
-  
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+
+registerbtn {
+    background-color: navy;
+    color: white;
+    /* 17. Set the background color to navy using the hex color */
+    /* 18. Set the text color to white using the hex color */
+    padding: 16px 20px;
+    margin: 8px 0;
+    /* 19. Set it to have no border */
+    border: 0px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
 }
 
 .registerbtn:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 a {
-  /* 20. Make link text color navy blue (look up the hex code) */
-  color: ;
-  /* 21. Set the text-decoration to none for links */
-  text-decoration: ;
+    /* 20. Make link text color navy blue (look up the hex code) */
+    color: navy;
+    /* 21. Set the text-decoration to none for links */
+    text-decoration: none;
 }
 
+
 /* 22. Set style for links using the :hover pseudoclass */
- {
-  /* 23. Change the color of links to azure on mouseover */
-  
-  /* 24. Set the text-decoration to underline for links on mouseover */
-  
+
+a:hover {
+    color: azure;
+    text-decoration: underline;
+    /* 23. Change the color of links to azure on mouseover */
+    /* 24. Set the text-decoration to underline for links on mouseover */
 }
 
 .signin {
-  background-color: #f1f1f1
-  /* 25. Align the text for the section with class "signin" to be centered */
-  
+    background-color: #f1f1f1;
+    text-align: center;
+    /* 25. Align the text for the section with class "signin" to be centered */
 }
