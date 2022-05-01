@@ -10,7 +10,7 @@ body {
 
 /* 8. Add style to divs with the "container" class */
 
-container {
+div.container {
     padding: 15px;
     background: #4B9CD3;
     /* 9. Add 15px padding */
@@ -18,8 +18,7 @@ container {
 }
 
 input[type=text],
-input[type=password],
-input[type=username] {
+input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -29,8 +28,7 @@ input[type=username] {
 }
 
 input[type=text]:focus,
-input[type=password]:focus,
-input[type=username] {
+input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
@@ -38,16 +36,16 @@ input[type=username] {
 
 /* 11. Style only the h1 with id "register" */
 
-#register {
+h1#register {
     font-weight: bold;
-    color: navy;
+    color: #000080;
     /* 12. Make the text BOLD */
     /* 13. Make the text color navy (look up the hex code for navy) */
 }
 
 hr {
     margin-bottom: 30px;
-    border: azure;
+    border: #0080ff;
     border-radius: 2px;
     /* 14. Override default hr style with a 30-pixel bottom margin */
     /* 15. Add a 2-pixel solid azure border (look up the hex code). */
@@ -56,7 +54,7 @@ hr {
 
 /* 16. Set a style for the submit button with "registerbtn" class */
 
-registerbtn {
+.registerbtn {
     background-color: navy;
     color: white;
     /* 17. Set the background color to navy using the hex color */
@@ -64,7 +62,7 @@ registerbtn {
     padding: 16px 20px;
     margin: 8px 0;
     /* 19. Set it to have no border */
-    border: 0px;
+    border-style: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
@@ -85,7 +83,7 @@ a {
 /* 22. Set style for links using the :hover pseudoclass */
 
 a:hover {
-    color: azure;
+    color: #0080ff;
     text-decoration: underline;
     /* 23. Change the color of links to azure on mouseover */
     /* 24. Set the text-decoration to underline for links on mouseover */
